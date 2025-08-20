@@ -258,170 +258,191 @@ body {
                 }
             }
         }
+
     }
-    .main{
+
+    .main {
         grid-area: main;
-        .contact {
-                padding: var(--spacing-4xl) var(--spacing-md);
-                background: linear-gradient(135deg,
-                        var(--color-gray-900) 0%,
-                        var(--color-gray-800) 100%);
-                color: var(--color-white);
-        
-                .contact__container {
-                    max-width: 1280px;
-                    margin: 0 auto;
-                    display: grid;
-                    gap: var(--spacing-3xl);
-        
-                    .contact__header {
-                        text-align: center;
-        
-                        .contact__title {
-                            font-size: var(--font-size-3xl);
-                            margin-bottom: var(--spacing-md);
-                            position: relative;
-                            font-weight: bold;
-                            display: inline-block;
-        
-                            &::after {
-                                content: "";
-                                position: absolute;
-                                bottom: -8px;
-                                left: 0;
-                                width: 0;
-                                height: 3px;
-                                background: linear-gradient(90deg, #00ff88, #00ccff);
-                                animation: underline-expand 2s ease-in-out infinite;
-                            }
+
+        /* ========================================
+       SECCIÓN PROYECTOS (BEM)
+       ======================================== */
+        .projects {
+            padding: var(--spacing-4xl) var(--spacing-md);
+            background-color: var(--color-white);
+
+            .projects__container {
+                max-width: 1280px;
+                margin: 0 auto;
+
+                .projects__header {
+                    text-align: center;
+                    margin-bottom: var(--spacing-3xl);
+
+                    .projects__title {
+                        font-size: var(--font-size-3xl);
+                        color: var(--color-gray-900);
+                        margin-bottom: var(--spacing-md);
+                        position: relative;
+                        /* agregar */
+                        display: inline-block;
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            bottom: -8px;
+                            left: 0;
+                            width: 0;
+                            height: 3px;
+                            background: linear-gradient(50deg,
+                                    var(--color-accent),
+                                    var(--color-secondary));
+                            animation: underline-expand 2s ease-in-out infinite;
                         }
                     }
-        
-                    .contact__content {
-                        display: grid;
-                        gap: var(--spacing-xl);
-        
-                        .contact__info {
-                            display: grid;
-                            gap: var(--spacing-lg);
-        
-                            .contact-item {
+
+                    .projects__subtitle {
+                        font-size: var(--font-size-lg);
+                        color: var(--color-gray-600);
+                    }
+                }
+
+                .projects__grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                    gap: var(--spacing-xl);
+
+                    /* TARJETAS DE PROYECTO CON FLIP EFFECT */
+                    .project-card {
+                        perspective: 1000px;
+                        height: 450px;
+
+                        .project-card__inner {
+                            position: relative;
+                            width: 100%;
+                            height: 100%;
+                            text-align: center;
+                            transition: transform 0.8s;
+                            transform-style: preserve-3d;
+                            cursor: pointer;
+
+                            .project-card__front,
+                            .project-card__back {
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+                                backface-visibility: hidden;
+                                border-radius: var(--radius-xl);
+                                box-shadow: var(--shadow-lg);
                                 display: flex;
-                                align-items: center;
-                                gap: var(--spacing-md);
-                                padding: var(--spacing-lg);
-                                background-color: rgba(255, 255, 255, 0.1);
-                                border-radius: var(--radius-lg);
-                                transition: var(--transition-normal);
-                                backdrop-filter: blur(10px);
-        
-                                &:hover {
-                                    background-color: rgba(255, 255, 255, 0.2);
-                                    transform: translateX(8px);
-                                }
-        
-                                .contact-item__icon {
-                                    width: 50px;
-                                    height: 50px;
-                                    background-color: var(--color-primary);
-                                    border-radius: var(--radius-full);
+                                flex-direction: column;
+                                overflow: hidden;
+                            }
+
+                            /* PARTE DELANTERA DE LA TARJETA */
+                            .project-card__front {
+                                background-color: var(--color-white);
+
+                                .project-card__image {
+                                    height: 220px;
+                                    background-color: var(--color-gray-200);
                                     display: flex;
                                     align-items: center;
                                     justify-content: center;
-                                    font-size: var(--font-size-lg);
-                                    flex-shrink: 0;
-                                }
-        
-                                .contact-item__content {
-                                    h3 {
-                                        font-size: var(--font-size-lg);
-                                        margin-bottom: var(--spacing-xs);
+                                    color: var(--color-gray-500);
+                                    font-size: var(--font-size-sm);
+
+                                    img {
+                                        width: 100%;
+                                        height: 100%;
+                                        object-fit: cover;
+                                        /* border-radius: var(--radius-xl); */
                                     }
-        
-                                    p {
-                                        opacity: 0.8;
+                                }
+
+                                .project-card__content {
+                                    padding: var(--spacing-lg);
+                                    flex: 1;
+                                    display: flex;
+                                    flex-direction: column;
+
+                                    .project-card__title {
+                                        font-size: var(--font-size-xl);
+                                        font-weight: 600;
+                                        color: var(--color-gray-900);
+                                        margin-bottom: var(--spacing-sm);
+                                    }
+
+                                    .project-card__description {
+                                        color: var(--color-gray-600);
+                                        flex: 1;
+                                        margin-bottom: var(--spacing-md);
+                                    }
+
+                                    .project-card__tech {
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                        gap: var(--spacing-xs);
+
+                                        .tech-tag {
+                                            font-size: var(--font-size-xs);
+                                            background-color: var(--color-gray-100);
+                                            color: var(--color-gray-700);
+                                            padding: var(--spacing-xs) var(--spacing-sm);
+                                            border-radius: var(--radius-full);
+                                            font-weight: 500;
+                                        }
                                     }
                                 }
                             }
-                        }
-        
-                        /* FORMULARIO DE CONTACTO */
-                        .contact__form {
-                            background-color: rgba(255, 255, 255, 0.1);
-                            padding: var(--spacing-xl);
-                            border-radius: var(--radius-xl);
-                            backdrop-filter: blur(10px);
-        
-                            .form {
-                                display: grid;
-                                gap: var(--spacing-lg);
-        
-                                .form__group {
-                                    display: grid;
+
+                            /* PARTE TRASERA DE LA TARJETA */
+                            .project-card__back {
+                                background: linear-gradient(135deg,
+                                        var(--color-primary),
+                                        var(--color-primary-dark));
+                                color: var(--color-white);
+                                transform: rotateY(180deg);
+                                padding: var(--spacing-xl);
+                                justify-content: center;
+                                align-items: center;
+                                text-align: center;
+
+                                .project-card__back-buttons {
+                                    display: flex;
                                     gap: var(--spacing-sm);
-        
-                                    .form__label {
+                                    justify-content: center;
+                                    margin-top: var(--spacing-md);
+
+                                    .project-card__back-button {
+                                        padding: var(--spacing-sm) var(--spacing-md);
+                                        background: rgba(255, 255, 255, 0.2);
+                                        color: var(--color-white);
+                                        text-decoration: none;
+                                        border-radius: var(--radius-md);
+                                        font-size: var(--font-size-sm);
                                         font-weight: 500;
-                                        color: var(--color-white);
-                                    }
-        
-                                    .form__input,
-                                    .form__textarea {
-                                        padding: var(--spacing-md);
-                                        border: 2px solid rgba(255, 255, 255, 0.2);
-                                        border-radius: var(--radius-lg);
-                                        background-color: rgba(255, 255, 255, 0.1);
-                                        color: var(--color-white);
-                                        font-family: var(--font-primary);
-                                        font-size: var(--font-size-base);
-                                        transition: var(--transition-normal);
-        
-                                        &:focus {
-                                            outline: none;
-                                            border-color: var(--color-secondary);
-                                            background-color: rgba(255, 255, 255, 0.2);
+                                        transition: var(--transition-fast);
+                                        border: 1px solid rgba(255, 255, 255, 0.3);
+                                        min-width: 80px;
+                                        text-align: center;
+
+                                        &:hover {
+                                            background: rgba(255, 255, 255, 0.3);
                                             transform: translateY(-2px);
+                                            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
                                         }
-        
-                                        &::placeholder {
-                                            color: rgba(255, 255, 255, 0.6);
-                                        }
-                                    }
-        
-                                    .form__textarea {
-                                        resize: vertical;
-                                        min-height: 120px;
-                                    }
-                                }
-        
-                                .form__button {
-                                    background: linear-gradient(135deg,
-                                            var(--color-secondary),
-                                            var(--color-secondary-dark));
-                                    color: var(--color-white);
-                                    border: none;
-                                    padding: var(--spacing-md) var(--spacing-xl);
-                                    border-radius: var(--radius-lg);
-                                    font-size: var(--font-size-lg);
-                                    font-weight: 600;
-                                    cursor: pointer;
-                                    transition: var(--transition-normal);
-                                    justify-self: start;
-        
-                                    &:hover {
-                                        transform: translateY(-3px);
-                                        box-shadow: var(--shadow-xl);
-                                        background: linear-gradient(135deg,
-                                                var(--color-secondary-dark),
-                                                var(--color-secondary));
                                     }
                                 }
                             }
                         }
-        
+
+                        &:hover .project-card__inner {
+                            transform: rotateY(180deg);
+                        }
                     }
                 }
             }
-        
         }
     }
+}
