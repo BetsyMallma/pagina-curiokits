@@ -12,6 +12,8 @@
   --color-accent: #f59e0b;
 
   --color-terceary: #9c7c9a;
+  --color-gray-800: #3C0366;
+  --color-gray-900: #3C0366;
   /* COLORES NEUTROS */
   --color-white: #ffffff;
   --color-gray-50: #f9fafb;
@@ -22,8 +24,7 @@
   --color-gray-500: #6b7280;
   --color-gray-600: #4b5563;
   --color-gray-700: #374151;
-  --color-gray-800: #1f2937;
-  --color-gray-900: #111827;
+  
   /* TIPOGRAFÍA */
   --font-primary: "Poppins","Inter", -apple-system, BlinkMacSystemFont, sans-serif;
   --font-code: "Fira Code", "Courier New", monospace;
@@ -1085,18 +1086,97 @@ body {
     }
   }
 }
-/*  ==================================
-    ANIMACIONES GLOBALES ACTUALIZADOS
-    ================================= */
+/* ========================================
+  ANIMACIONES GLOBALES ACTUALILZADOS
+========================================*/
+
 @keyframes tech-pulse {
+
   0%,
   100% {
     transform: scale(1);
-    filter: brightness(1.2);
+    filter: brightness(1);
   }
 
   50% {
     transform: scale(1.05);
     filter: brightness(1.2);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes underline-expand {
+
+  0%,
+  100% {
+    width: 0;
+  }
+
+  50% {
+    width: 100%;
+  }
+}
+
+/*** ANIMACIONES PARA LAS BARRAS DE PROGRESO** */
+@keyframes progressAnimation {
+  from {
+    width: 0%;
+  }
+}
+
+@keyframes progressHTML {
+  to {
+    width: 95%;
+  }
+}
+
+@keyframes progressCSS {
+  to {
+    width: 90%;
+  }
+}
+
+@keyframes progressJS {
+  to {
+    width: 85%;
+  }
+}
+
+@keyframes progressReact {
+  to {
+    width: 80%;
+  }
+}
+
+@keyframes progressNode {
+  to {
+    width: 75%;
+  }
+}
+
+@keyframes progressGit {
+  to {
+    width: 85%;
   }
 }
