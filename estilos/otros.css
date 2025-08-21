@@ -71,6 +71,7 @@
     --breakpoint-lg: 1024px;
     --breakpoint-xl: 1280px;
 }
+
 /* ========================================
    RESET Y ESTILOS BASE
 ======================================== */
@@ -445,92 +446,159 @@ body {
             }
         }
     }
+}
 
+/* ========================================
+             FOOTER (BEM)
+  ======================================== */
 .footer {
-        grid-area: footer;
-        background-color: var(--color-gray-900);
-        color: var(--color-white);
-        padding: var(--spacing-xl) var(--spacing-md);
-        text-align: center;
-        
-        .footer__container {
-            max-width: 1280px;
-            margin: 0 auto;
-        
-            .footer__social {
+    grid-area: footer;
+    background-color: var(--color-gray-900);
+    color: var(--color-white);
+    padding: var(--spacing-xl) var(--spacing-md);
+    text-align: center;
+
+    .footer__container {
+        max-width: 1280px;
+        margin: 0 auto;
+
+        .footer__social {
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-lg);
+            margin-bottom: var(--spacing-lg);
+
+            .social-link {
                 display: flex;
+                align-items: center;
                 justify-content: center;
-                gap: var(--spacing-lg);
-                margin-bottom: var(--spacing-lg);
-        
-                    .social-link {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    width: 50px;
-                    height: 50px;
-                    background-color: var(--color-gray-800);
-                    border-radius: var(--radius-full);
-                    color: var(--color-white);
-                    text-decoration: none;
-                    transition: var(--transition-normal);
-                    font-size: var(--font-size-lg);
-        
-                  &:hover {
-                        background-color: var(--color-primary);
-                        transform: translateY(-3px) scale(1.1);
-                    }
+                width: 50px;
+                height: 50px;
+                background-color: var(--color-gray-800);
+                border-radius: var(--radius-full);
+                color: var(--color-white);
+                text-decoration: none;
+                transition: var(--transition-normal);
+                font-size: var(--font-size-lg);
+
+                &:hover {
+                    background-color: var(--color-primary);
+                    transform: translateY(-3px) scale(1.1);
                 }
             }
-        
-            .footer__text {
-                opacity: 0.7;
-                font-size: var(--font-size-sm);
-            }
+        }
+
+        .footer__text {
+            opacity: 0.7;
+            font-size: var(--font-size-sm);
         }
     }
+}
 
-    .footer {
-            grid-area: footer;
-            background-color: var(--color-gray-900);
-            color: var(--color-white);
-            padding: var(--spacing-xl) var(--spacing-md);
-            text-align: center;
-    
-            .footer__container {
-                max-width: 1280px;
-                margin: 0 auto;
-    
-                .footer__social {
-                    display: flex;
-                    justify-content: center;
-                    gap: var(--spacing-lg);
-                    margin-bottom: var(--spacing-lg);
-    
-                    .social-link {
+
+/*  ==================================
+    MEDIA QUERUES PARA ADAPTABILIDAD
+    ================================= */
+
+/* /* RESPONSIVE GRID PARA TABLET  @media (min-width: 768px)  */
+
+@media (min-width: 768px) {
+    .portafolio {
+        .header {
+            width: 100%;
+
+            .header_container {
+                display: flex;
+                align-items: center;
+
+                .header__logo {
+                    width: 280px;
+                    gap: 11px;
+
+                    h3 {
+                        font-size: 20px;
+                    }
+                }
+
+                .header__menu-buton {
+                    display: none;
+                }
+
+                .nav {
+                    background-color: var(--color-white);
+                    position: sticky;
+                    top: 0;
+                    transform: none;
+                    opacity: 1;
+                    visibility: visible;
+                    /* background: transparent; */
+                    margin-left: 10px;
+                    box-shadow: none;
+
+                    .nav__list {
                         display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        width: 50px;
-                        height: 50px;
-                        background-color: var(--color-gray-800);
-                        border-radius: var(--radius-full);
-                        color: var(--color-white);
-                        text-decoration: none;
-                        transition: var(--transition-normal);
-                        font-size: var(--font-size-lg);
-    
-                        &:hover {
-                            background-color: var(--color-primary);
-                            transform: translateY(-3px) scale(1.1);
+
+                        .nav__item {
+                            width: 100%;
+
+                            display: flex;
+                            justify-content: space-evenly;
+                            border: none;
+
+                            .nav__link {
+                                padding: 10px 15px;
+                                font-size: 10px;
+
+                                &:hover {
+                                    border-radius: 50px;
+                                }
+                            }
                         }
                     }
                 }
-    
-                .footer__text {
-                    opacity: 0.7;
-                    font-size: var(--font-size-sm);
+            }
+        }
+    }
+}
+
+/* para destop */
+@media (min-width: 1024px) {
+    .portafolio {
+        grid-template-areas:
+            "header  header"
+            "main main"
+            "footer footer";
+
+        .header {
+            .header_container {
+                width: 100%;
+                gap: 18px;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+
+                .header__logo {
+                    width: 350px;
+                    margin-left: 20px;
+
                 }
+
+                .header__menu-buton {
+                    display: none;
+                }
+
+                .nav {
+                    .nav__list {
+                        .nav__item {
+                            border: none;
+
+                            .nav__link {
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

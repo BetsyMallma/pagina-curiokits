@@ -5,387 +5,357 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="estilos/otros.css">
+    <link rel="stylesheet" href="estilos/servicios.css">
 </head>
 
 <body>
-
-    <body>
-        <!-- ====ESTRUCTURA PRINCIPAL CON CSS-GRID PARA MOVILO=== -->
-        <div class="portafolio">
-            <!-- +************************************
+    <!-- ====ESTRUCTURA PRINCIPAL CON CSS-GRID PARA MOVILO=== -->
+    <div class="portafolio">
+        <!-- +************************************
             HEADER CON NAVEGACIÓN REPONSIVE  
          *************************************-->
-            <header class="header">
-                <div class="header_container">
-                    <!--== LOGO A LA IZQUIERDA== -->
-                    <div class="header__logo">
-                        <a href="#inicio">
-                            <img src="imagenes/logo.png" alt="logo curiokits" />
-                        </a>
-                        <h3>EVENTOS INFANTILES</h3>
-                    </div>
-                    <!-- ==MENÚ MOVIL==-->
-                    <input type="checkbox" id="menu-toggle" class="header__menu-toggle" />
-                    <label for="menu-toggle" class="header__menu-buton">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </label>
-                    <!-- ==NAVEGACIÓN A LA DERECHA== -->
-                    <nav class="nav">
-                        <ul class="nav__list">
-                            <li class="nav__item">
-                                <a href="index.html" class="nav__link nav__link--active">Inicio</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="paquetes.html" class="nav__link ">Paquetes</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="servicios.html" class="nav__link ">Servicios</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="otros.html" class="nav__link ">Otros</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="galeria.html" class="nav__link ">Galeria</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="contacto.html" class="nav__link ">Contacto</a>
-                            </li>
-                        </ul>
-                    </nav>
+        <header class="header">
+            <div class="header_container">
+                <!--== LOGO A LA IZQUIERDA== -->
+                <div class="header__logo">
+                    <a href="#inicio">
+                        <img src="imagenes/logo.png" alt="logo curiokits" />
+                    </a>
+                    <h3>EVENTOS INFANTILES</h3>
+                </div>
+                <!-- ==MENÚ MOVIL==-->
+                <input type="checkbox" id="menu-toggle" class="header__menu-toggle" />
+                <label for="menu-toggle" class="header__menu-buton">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <!-- ==NAVEGACIÓN A LA DERECHA== -->
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link nav__link--active">Inicio</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="paquetes.html" class="nav__link ">Paquetes</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="servicios.html" class="nav__link ">Servicios</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="otros.html" class="nav__link ">Otros</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="galeria.html" class="nav__link ">Galeria</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="contacto.html" class="nav__link ">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
 
-            </header>
-            <!-- PAQUETES -->
+        </header>
+        <!-- PAQUETES -->
         <main class="main">
             <!-- SECCIÓN PROYECTOS -->
             <section id="proyectos" class="projects">
-                    <div class="projects__container">
-                        <div class="projects__header">
-                            <h2 class="projects__title">Mis Proyectos</h2>
-                            <p class="projects__subtitle">
-                                Una selección de mis trabajos más destacados
-                            </p>
-                        </div>
+                <div class="projects__container">
+                    <div class="projects__header">
+                        <h2 class="projects__title">Servicios </h2>
+                        <p class="projects__subtitle">
+                            🌟🤹‍♀️ Hacemos realidad la fiesta soñada de tus peques 🎊
+                        </p>
+                    </div>
 
-                        <div class="projects__grid">
-                <!-- PROYECTO 1 -->
-                    <article class="project-card">
-                                <div class="project-card__inner">
-                                    <!-- FRENTE DE LA TARJETA -->
-                                    <div class="project-card__front">
-                                        <div class="project-card__image">
-                                            <img src="imagenes/navidad1.jpg" alt="Juego solitario" />
-                                        </div>
-                                        <div class="project-card__content">
-                                            <h3 class="project-card__title">Juego solitario</h3>
-                                            <p class="project-card__description">
-                                                Juego clásico de Solitario desarrollado con JavaScript
-                                                vanilla. Interfaz intuitiva, animaciones suaves y lógica
-                                                de juego completa.
-                                            </p>
-
-                                        </div>
+                    <div class="projects__grid">
+                        <!-- PROYECTO 1 -->
+                        <article class="project-card">
+                            <div class="project-card__inner">
+                                <!-- FRENTE DE LA TARJETA -->
+                                <div class="project-card__front">
+                                    <div class="project-card__image">
+                                        <img src="imagenes/piñata personalizada.jpg" alt="Juego solitario" />
                                     </div>
-
-                                    <!-- REVERSO DE LA TARJETA -->
-                                    <div class="project-card__back">
-                                        <h3 class="project-card__back-title">Características</h3>
-                                        <p class="project-card__back-text">
-                                            • Autenticación de usuarios<br />
-                                            • Carrito de compras persistente<br />
-                                            • Integración con Stripe<br />
-                                            • Panel de administración<br />
-                                            • Responsive design<br />
-                                            • SEO optimizado
-                                        </p>
-
+                                    <div class="project-card__content">
+                                        <h3 class="project-card__title">Piñatas Personalizadas</h3>
+                                        <p class="project-card__description">
+                                        🎊 Piñatas únicas con diseños temáticos y resistentes.
+                                        Sorprende a todos con piñatas hechas a medida para cada celebración.
+                                        <p>💵 Desde S/ 35.00</p>
                                     </div>
                                 </div>
-                    </article>
-                <!-- PROYECTO 2 -->
-                    <article class="project-card">
-                                <div class="project-card__inner">
-                                    <div class="project-card__front">
-                                        <div class="project-card__image">
-                                            <img src="imagenes/plimplim2.jpg" alt="App de Gestion" />
-                                        </div>
-                                        <div class="project-card__content">
-                                            <h3 class="project-card__title">App de Gestión</h3>
-                                            <p class="project-card__description">
-                                                Aplicación web para gestión de proyectos con sistema de
-                                                tareas, calendario y colaboración en tiempo real.
-                                            </p>
-                                        </div>
-                                    </div>
 
-                                    <div class="project-card__back">
-                                        <h3 class="project-card__back-title">Características</h3>
-                                        <p class="project-card__back-text">
-                                            • Gestión de proyectos<br />
-                                            • Sistema de tareas<br />
-                                            • Chat en tiempo real<br />
-                                            • Calendario integrado<br />
-                                            • Notificaciones push<br />
-                                            • Dashboard analítico
+                                <!-- REVERSO DE LA TARJETA -->
+                                <div class="project-card__back">
+                                    <h3 class="project-card__back-title"> Lo que ofrecemos en piñatas</h3>
+                                    <p class="project-card__back-text">
+                                        <br />
+                                        • 🎯 Personajes infantiles y personalizados<br />
+                                        • 💪 Diseños creativos y resistentes<br />
+                                        • 🍬 Rellenas o vacías según tu elección<br />
+                                        • 🎨 Colores y tamaños a pedido<br />
+                                        • 🚚 Entrega rápida y segura<br />
+                                    </p>
+
+                                </div>
+                            </div>
+                        </article>
+                        <!-- PROYECTO 2 -->
+                        <article class="project-card">
+                            <div class="project-card__inner">
+                                <div class="project-card__front">
+                                    <div class="project-card__image">
+                                        <img src="imagenes/decoracion globos.jpg" alt="App de Gestion" />
+                                    </div>
+                                    <div class="project-card__content">
+                                        <h3 class="project-card__title">Decoración con Globos</h3>
+                                        <p class="project-card__description">
+                                            🎈 Llena de color y alegría tu evento.
+                                            Ofrecemos decoraciones con globos que transforman cualquier espacio.
+                                           <p>💵 Desde S/ 15.00</p>
                                         </p>
-                                        <div class="project-card__back-buttons">
-                                            <a href="#" class="project-card__back-button">👁️ Ver</a>
-                                            <a href="#" class="project-card__back-button">💻 Código</a>
-                                        </div>
                                     </div>
                                 </div>
-                    </article>
-                <!-- PROYECTO 3 -->
-                    <article class="project-card">
-                                <div class="project-card__inner">
-                                    <div class="project-card__front">
-                                        <div class="project-card__image">
-                                            <img src="imagenes/showmariobros.jpg" alt="Portafolio Creativo" />
-                                        </div>
-                                        <div class="project-card__content">
-                                            <h3 class="project-card__title">Portfolio Creativo</h3>
-                                            <p class="project-card__description">
-                                                Sitio web portfolio para artista visual con galería
-                                                interactiva y efectos visuales avanzados.
-                                            </p>
-                                        </div>
-                                    </div>
 
-                                    <div class="project-card__back">
-                                        <h3 class="project-card__back-title">Características</h3>
-                                        <p class="project-card__back-text">
-                                            • Galería interactiva<br />
-                                            • Animaciones GSAP<br />
-                                            • Lazy loading<br />
-                                            • Lightbox personalizado<br />
-                                            • Optimización de imágenes<br />
-                                            • Performance 98/100
+                                <div class="project-card__back">
+                                    <h3 class="project-card__back-title"> Opciones en decoración</h3>
+                                    <p class="project-card__back-text">
+                                        • 🎀 Arcos de globos temáticos<br />
+                                        • 🎉 Columnas decorativas<br />
+                                        • Animación de cumpleaños con temática personalizada<br />
+                                        • ✨ Globos metalizados y pencil<br />
+                                        • 🌈 Diseños personalizados por temática<br />
+                                        • 📸 Fondos ideales para fotos<br />
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- PROYECTO 3 -->
+                        <article class="project-card">
+                            <div class="project-card__inner">
+                                <div class="project-card__front">
+                                    <div class="project-card__image">
+                                        <img src="imagenes/cartoneria.jpeg" alt="Portafolio Creativo" />
+                                    </div>
+                                    <div class="project-card__content">
+                                        <h3 class="project-card__title">Cartonería Personalizada</h3>
+                                        <p class="project-card__description">
+                                            📦 Detalles decorativos que marcan la diferencia.
+                                            Perfectos para tortas, sorpresas y recuerdos de fiesta.
+                                            <p>💵 Desde S/ 15.00</p>
                                         </p>
-                                        <div class="project-card__back-buttons">
-                                            <a href="#" class="project-card__back-button">👁️ Ver</a>
-                                            <a href="#" class="project-card__back-button">💻 Código</a>
-                                        </div>
                                     </div>
                                 </div>
-                    </article>
-                <!-- PROYECTO 4 -->
-                    <article class="project-card">
-                                <div class="project-card__inner">
-                                    <div class="project-card__front">
-                                        <div class="project-card__image">
-                                            <img src="imagenes/showmariobros.jpg" alt="Portafolio Creativo" />
-                                        </div>
-                                        <div class="project-card__content">
-                                            <h3 class="project-card__title">Portfolio Creativo</h3>
-                                            <p class="project-card__description">
-                                                Sitio web portfolio para artista visual con galería
-                                                interactiva y efectos visuales avanzados.
-                                            </p>
-                                        </div>
-                                    </div>
 
-                                    <div class="project-card__back">
-                                        <h3 class="project-card__back-title">Características</h3>
-                                        <p class="project-card__back-text">
-                                            • Galería interactiva<br />
-                                            • Animaciones GSAP<br />
-                                            • Lazy loading<br />
-                                            • Lightbox personalizado<br />
-                                            • Optimización de imágenes<br />
-                                            • Performance 98/100
+                                <div class="project-card__back">
+                                    <h3 class="project-card__back-title"> 🐶PATRULLA CANINA🎉 </h3>
+                                    <p class="project-card__back-text">
+                                        • 🍰 Cajas para tortas<br />
+                                        • 🎁 Cajitas decorativas<br />
+                                        •🎊 Cajitas sorpresa<br />
+                                        •🎨 Diseños personalizados<br />
+                                        •🛍️ Material resistente y colorido<br />
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- PROYECTO 4 -->
+                        <article class="project-card">
+                            <div class="project-card__inner">
+                                <div class="project-card__front">
+                                    <div class="project-card__image">
+                                        <img src="imagenes/cotill.jpg" alt="Portafolio Creativo" />
+                                    </div>
+                                    <div class="project-card__content">
+                                        <h3 class="project-card__title">Cotillón Variado</h3>
+                                        <p class="project-card__description">
+                                            🎉 Diversión asegurada con accesorios coloridos.
+                                            Haz que tus invitados disfruten al máximo con nuestro cotillón.
+                                            <p>💵 Desde S/ 20.00 (packs)</p>
                                         </p>
-                                        <div class="project-card__back-buttons">
-                                            <a href="#" class="project-card__back-button">👁️ Ver</a>
-                                            <a href="#" class="project-card__back-button">💻 Código</a>
-                                        </div>
                                     </div>
                                 </div>
-                    </article>
-                <!-- PROYECTO 5-->
-                    <article class="project-card">
-                                <div class="project-card__inner">
-                                    <div class="project-card__front">
-                                        <div class="project-card__image">
-                                            <img src="imagenes/showmariobros.jpg" alt="Portafolio Creativo" />
-                                        </div>
-                                        <div class="project-card__content">
-                                            <h3 class="project-card__title">Portfolio Creativo</h3>
-                                            <p class="project-card__description">
-                                                Sitio web portfolio para artista visual con galería
-                                                interactiva y efectos visuales avanzados.
-                                            </p>
-                                        </div>
-                                    </div>
 
-                                    <div class="project-card__back">
-                                        <h3 class="project-card__back-title">Características</h3>
-                                        <p class="project-card__back-text">
-                                            • Galería interactiva<br />
-                                            • Animaciones GSAP<br />
-                                            • Lazy loading<br />
-                                            • Lightbox personalizado<br />
-                                            • Optimización de imágenes<br />
-                                            • Performance 98/100
+                                <div class="project-card__back">
+                                    <h3 class="project-card__back-title">Accesorios de fiesta:</h3>
+                                    <p class="project-card__back-text">
+                                        • 🎶 Pitos y matracas<br />
+                                        • 👓 Vinchas y lentes divertidos<br />
+                                        • 🎭 Antifaces coloridos<br />
+                                        • 🥳 Sombreros y coronas<br />
+                                        • ✨ Accesorios brillantes<br />
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- PROYECTO 5-->
+                        <article class="project-card">
+                            <div class="project-card__inner">
+                                <div class="project-card__front">
+                                    <div class="project-card__image">
+                                        <img src="imagenes/juguestes sorpresa.jpg" alt="Portafolio Creativo" />
+                                    </div>
+                                    <div class="project-card__content">
+                                        <h3 class="project-card__title">Juguetes y Sorpresas</h3>
+                                        <p class="project-card__description">
+                                        🎁 Pequeños detalles que encantan a los niños.
+                                        El complemento perfecto para piñatas y bolsitas sorpresa.
+                                        <p>💵 Desde S/ 1.00 (unidad) | Packs desde S/ 25.00</p>
                                         </p>
-                                        <div class="project-card__back-buttons">
-                                            <a href="#" class="project-card__back-button">👁️ Ver</a>
-                                            <a href="#" class="project-card__back-button">💻 Código</a>
-                                        </div>
                                     </div>
                                 </div>
-                    </article>
-                <!-- PROYECTO 6 -->
-                    <article class="project-card">
-                                <div class="project-card__inner">
-                                    <div class="project-card__front">
-                                        <div class="project-card__image">
-                                            <img src="imagenes/showmariobros.jpg" alt="Portafolio Creativo" />
-                                        </div>
-                                        <div class="project-card__content">
-                                            <h3 class="project-card__title">Portfolio Creativo</h3>
-                                            <p class="project-card__description">
-                                                Sitio web portfolio para artista visual con galería
-                                                interactiva y efectos visuales avanzados.
-                                            </p>
-                                        </div>
-                                    </div>
 
-                                    <div class="project-card__back">
-                                        <h3 class="project-card__back-title">Características</h3>
-                                        <p class="project-card__back-text">
-                                            • Galería interactiva<br />
-                                            • Animaciones GSAP<br />
-                                            • Lazy loading<br />
-                                            • Lightbox personalizado<br />
-                                            • Optimización de imágenes<br />
-                                            • Performance 98/100
+                                <div class="project-card__back">
+                                    <h3 class="project-card__back-title">Lo que incluyen nuestras sorpresas:</h3>
+                                    <p class="project-card__back-text">
+                                        • 🧸 Sorpresas para piñata<br />
+                                        • 🚂 Juguetes pequeños<br />
+                                        • 🍬 Dulces y accesorios<br />
+                                        • 🎲 Juegos didácticos<br />
+                                        • 🎨 Stickers y detalles divertidos<br />
+                                    </p>
+
+                                </div>
+                            </div>
+                        </article>
+                        <!-- PROYECTO 6 -->
+                        <article class="project-card">
+                            <div class="project-card__inner">
+                                <div class="project-card__front">
+                                    <div class="project-card__image">
+                                        <img src="imagenes/hora loca.jpeg" alt="Portafolio Creativo" />
+                                    </div>
+                                    <div class="project-card__content">
+                                        <h3 class="project-card__title">Hora Loca</h3>
+                                        <p class="project-card__description">
+                                        🥳 El momento más divertido de la fiesta.
+                                        Accesorios y animación para que todos se contagien de la alegría.
+                                        <p>💵 Desde S/ 40.00 (packs)</p>
                                         </p>
-                                        <div class="project-card__back-buttons">
-                                            <a href="#" class="project-card__back-button">👁️ Ver</a>
-                                            <a href="#" class="project-card__back-button">💻 Código</a>
-                                        </div>
                                     </div>
                                 </div>
-                    </article>
-                <!-- PROYECTO 7 -->
-                    <article class="project-card">
-                                <div class="project-card__inner">
-                                    <div class="project-card__front">
-                                        <div class="project-card__image">
-                                            <img src="imagenes/showmariobros.jpg" alt="Portafolio Creativo" />
-                                        </div>
-                                        <div class="project-card__content">
-                                            <h3 class="project-card__title">Portfolio Creativo</h3>
-                                            <p class="project-card__description">
-                                                Sitio web portfolio para artista visual con galería
-                                                interactiva y efectos visuales avanzados.
-                                            </p>
-                                        </div>
-                                    </div>
 
-                                    <div class="project-card__back">
-                                        <h3 class="project-card__back-title">Características</h3>
-                                        <p class="project-card__back-text">
-                                            • Galería interactiva<br />
-                                            • Animaciones GSAP<br />
-                                            • Lazy loading<br />
-                                            • Lightbox personalizado<br />
-                                            • Optimización de imágenes<br />
-                                            • Performance 98/100
+                                <div class="project-card__back">
+                                    <h3 class="project-card__back-title">Accesorios para la Hora Loca:</h3>
+                                    <p class="project-card__back-text">
+                                        • 🎆 Espumas y bombardas<br />
+                                        • 🌺 Hawaianas y vinchas<br />
+                                        • 😎 Lentes y accesorios luminosos
+                                        • 🎶 Pitos y matracas brillantes
+                                        • 🎊 Sombreros divertidos
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- PROYECTO 7 -->
+                        <article class="project-card">
+                            <div class="project-card__inner">
+                                <div class="project-card__front">
+                                    <div class="project-card__image">
+                                        <img src="imagenes/relleno piñata.jpg" alt="Portafolio Creativo" />
+                                    </div>
+                                    <div class="project-card__content">
+                                        <h3 class="project-card__title">Relleno de Piñata</h3>
+                                        <p class="project-card__description">
+                                            🍬 Completa tu piñata con dulces y sorpresas.
+                                            Variedad de opciones para sorprender a los invitados.
+                                            <p>💵 Desde S/ 30.00 (bolsa de 50 piezas)</p>
                                         </p>
-                                        <div class="project-card__back-buttons">
-                                            <a href="#" class="project-card__back-button">👁️ Ver</a>
-                                            <a href="#" class="project-card__back-button">💻 Código</a>
-                                        </div>
                                     </div>
                                 </div>
-                    </article>
-                <!-- PROYECTO 8 -->
-                    <article class="project-card">
-                                <div class="project-card__inner">
-                                    <div class="project-card__front">
-                                        <div class="project-card__image">
-                                            <img src="imagenes/showmariobros.jpg" alt="Portafolio Creativo" />
-                                        </div>
-                                        <div class="project-card__content">
-                                            <h3 class="project-card__title">Portfolio Creativo</h3>
-                                            <p class="project-card__description">
-                                                Sitio web portfolio para artista visual con galería
-                                                interactiva y efectos visuales avanzados.
-                                            </p>
-                                        </div>
-                                    </div>
 
-                                    <div class="project-card__back">
-                                        <h3 class="project-card__back-title">Características</h3>
-                                        <p class="project-card__back-text">
-                                            • Galería interactiva<br />
-                                            • Animaciones GSAP<br />
-                                            • Lazy loading<br />
-                                            • Lightbox personalizado<br />
-                                            • Optimización de imágenes<br />
-                                            • Performance 98/100
+                                <div class="project-card__back">
+                                    <h3 class="project-card__back-title">Opciones de relleno:</h3>
+                                    <p class="project-card__back-text">
+                                        •🍭 Caramelos y chocolates<br />
+                                        • 🎲 Juguetitos variados<br />
+                                        • 🎯 Opciones personalizadas<br />
+                                        • 🍫 Golosinas variadas<br />
+                                        • 🎉 Accesorios pequeños<br />
+                                    </p>
+
+                                </div>
+                            </div>
+                        </article>
+                        <!-- PROYECTO 8 -->
+                        <article class="project-card">
+                            <div class="project-card__inner">
+                                <div class="project-card__front">
+                                    <div class="project-card__image">
+                                        <img src="imagenes/arcos de globo.jpg" alt="Portafolio Creativo" />
+                                    </div>
+                                    <div class="project-card__content">
+                                        <h3 class="project-card__title">Arcos Temáticos de Globos</h3>
+                                        <p class="project-card__description">
+                                            🎂 Transforma tu fiesta con arcos llenos de color.
+                                            Diseñados según la temática y el estilo de tu celebración.
+                                            <p>💵 Desde S/ 120.00</p>
                                         </p>
-                                        <div class="project-card__back-buttons">
-                                            <a href="#" class="project-card__back-button">👁️ Ver</a>
-                                            <a href="#" class="project-card__back-button">💻 Código</a>
-                                        </div>
                                     </div>
                                 </div>
-                    </article>
-                <!-- PROYECTO 9 -->
-                    <article class="project-card">
-                                <div class="project-card__inner">
-                                    <div class="project-card__front">
-                                        <div class="project-card__image">
-                                            <img src="imagenes/showmariobros.jpg" alt="Portafolio Creativo" />
-                                        </div>
-                                        <div class="project-card__content">
-                                            <h3 class="project-card__title">Portfolio Creativo</h3>
-                                            <p class="project-card__description">
-                                                Sitio web portfolio para artista visual con galería
-                                                interactiva y efectos visuales avanzados.
-                                            </p>
-                                        </div>
-                                    </div>
 
-                                    <div class="project-card__back">
-                                        <h3 class="project-card__back-title">Características</h3>
-                                        <p class="project-card__back-text">
-                                            • Galería interactiva<br />
-                                            • Animaciones GSAP<br />
-                                            • Lazy loading<br />
-                                            • Lightbox personalizado<br />
-                                            • Optimización de imágenes<br />
-                                            • Performance 98/100
+                                <div class="project-card__back">
+                                    <h3 class="project-card__back-title">Diseños disponibles:</h3>
+                                    <p class="project-card__back-text">
+                                        🎨 Diseños personalizados<br />
+                                        •🌈 Colores según la temática<br />
+                                        • 🛠️ Montaje en tu evento<br />
+                                        • 📸 Escenografía para fotos<br />
+                                        • 🎉 Decoración adaptable a cualquier espacio<br />
+                                    </p>
+
+                                </div>
+                            </div>
+                        </article>
+                        <!-- PROYECTO 9 -->
+                        <article class="project-card">
+                            <div class="project-card__inner">
+                                <div class="project-card__front">
+                                    <div class="project-card__image">
+                                        <img src="imagenes/extras.png" alt="Portafolio Creativo" />
+                                    </div>
+                                    <div class="project-card__content">
+                                        <h3 class="project-card__title">Accesorios Extra</h3>
+                                        <p class="project-card__description">
+                                            🔧 Todo lo que necesitas para una fiesta perfecta.
+                                            Complementos prácticos y decorativos para facilitar tu celebración.
+                                            <p>💵 Desde S/ 5.00</p>
                                         </p>
-                                        <div class="project-card__back-buttons">
-                                            <a href="#" class="project-card__back-button">👁️ Ver</a>
-                                            <a href="#" class="project-card__back-button">💻 Código</a>
-                                        </div>
                                     </div>
                                 </div>
-                    </article>
+
+                                <div class="project-card__back">
+                                    <h3 class="project-card__back-title">Complementos adicionales:</h3>
+                                    <p class="project-card__back-text">
+                                        • 🎈 Infladores de globos<br />
+                                        •🎆 Bombitas de espuma<br />
+                                        •🎊 Complementos decorativos<br />
+                                        • 🧴 Pegamentos y cintas especiales<br />
+                                        • ✨ Accesorios de montaje rápido
+                                    </p>
+
+                                </div>
+                            </div>
+                        </article>
+                    </div>
                 </div>
-            </div>
             </section>
+
         </main>
-        
+
         <!-- ========================================
                                              FOOTER
                 ======================================== -->
         <footer class="footer">
             <div class="footer__container">
                 <div class="footer__social">
-                    <a href="https://www.instagram.com/curiokits.producciones/?igsh=emF6ZTRtYW5uZjF5#" class="social-link"
-                        aria-label="LinkedIn" target="_blank">📸</a>
-                    <a href="curiokidsproducciones@gmail.com" class="social-link" aria-label="GitHub" target="_blank">💻</a>
-                    <a href="curiokidsproducciones@gmail.com" class="social-link" aria-label="Twitter"
-                        target="_blank">🐦</a>
-                    <a href="curiokidsproducciones@gmail.com" class="social-link" aria-label="Instagram"
-                        target="_blank">📷</a>
+                    <a href="https://www.instagram.com/curiokids.producciones/?igsh=emF6ZTRtYW5uZjF5#"
+                        class="social-link" aria-label="LinkedIn" target="_blank">📸</a>
+                    <a href="https://www.tiktok.com/@curiokidsproducciones" class="social-link" aria-label="GitHub"
+                        target="_blank">📱</a>
+                    <a href="https://www.facebook.com/profile.php?id=61579719420984" class="social-link"
+                        aria-label="Twitter" target="_blank">📘</a>
+                    <a href="https://x.com/Curiokids_" class="social-link" aria-label="Instagram" target="_blank">🐦</a>
                 </div>
                 <p class="footer__text">
                     ©2025 curiokids Producciones. Todos los derechos reservados.
@@ -393,6 +363,6 @@
                 </p>
             </div>
         </footer>
-    </body>
+</body>
 
 </html>
