@@ -11,9 +11,9 @@
     --color-secondary-dark: #6fdee2;
     --color-accent: #f59e0b;
 
-    --color-terceary: #9c7c9a;
-    --color-gray-800: #3C0366;
-    --color-gray-900: #3C0366;
+    --color-terceary: #3C0366;
+    --color-gray-800: #8854d0;
+    --color-gray-900: #a55eea;
     /* COLORES NEUTROS */
     --color-white: #ffffff;
     --color-gray-50: #f9fafb;
@@ -22,8 +22,8 @@
     --color-gray-300: #d1d5db;
     --color-gray-400: #9ca3af;
     --color-gray-500: #6b7280;
-    --color-gray-600: #4b5563;
-    --color-gray-700: #374151;
+    --color-gray-600: #3C0366;
+    --color-gray-700: #a55eea;
 
     /* TIPOGRAFÍA */
     --font-primary: "Poppins", "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
@@ -270,7 +270,7 @@ body {
        ======================================== */
         .projects {
             padding: var(--spacing-4xl) var(--spacing-md);
-            background-color: var(--color-white);
+            background-color: #DAB2FF;
 
             .projects__container {
                 max-width: 1280px;
@@ -282,7 +282,7 @@ body {
 
                     .projects__title {
                         font-size: var(--font-size-3xl);
-                        color: var(--color-gray-900);
+                        color: var(--color-gray-600);
                         margin-bottom: var(--spacing-md);
                         position: relative;
                         /* agregar */
@@ -370,12 +370,12 @@ body {
                                     .project-card__title {
                                         font-size: var(--font-size-xl);
                                         font-weight: 600;
-                                        color: var(--color-gray-900);
+                                        color: var(--color-gray-600);
                                         margin-bottom: var(--spacing-sm);
                                     }
 
                                     .project-card__description {
-                                        color: var(--color-gray-600);
+                                        color: var(--color-gray-500);
                                         flex: 1;
                                         margin-bottom: var(--spacing-md);
                                     }

@@ -11,9 +11,10 @@
   --color-secondary-dark: #6fdee2;
   --color-accent: #f59e0b;
 
-  --color-terceary: #9c7c9a;
-  --color-gray-800: #3C0366;
-  --color-gray-900: #3C0366;
+  --color-terceary: #3C0366;
+  --color-gray-600: #3C0366;
+  --color-gray-800: #8854d0;
+  --color-gray-900: #8854d0;
   /* COLORES NEUTROS */
   --color-white: #ffffff;
   --color-gray-50: #f9fafb;
@@ -22,8 +23,7 @@
   --color-gray-300: #d1d5db;
   --color-gray-400: #9ca3af;
   --color-gray-500: #6b7280;
-  --color-gray-600: #4b5563;
-  --color-gray-700: #374151;
+  --color-gray-700: #a55eea;
 
   /* TIPOGRAFÍA */
   --font-primary: "Poppins", "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
@@ -266,9 +266,9 @@ body {
     grid-area: main;
 
     .about {
-      padding: var(--spacing-4xl) var(--spacing-md);
-      background-color: var(--color-gray-50);
-
+      padding-bottom: 30px;
+      padding-top: 20px;
+      background-color: #DAB2FF;
       .about__container {
         max-width: 1280px;
         margin: 0 auto;
@@ -285,10 +285,11 @@ body {
             display: flex;
             flex-direction: column;
             align-items: center;
+            
 
             .about__title {
               font-size: var(--font-size-3xl);
-              color: var(--color-gray-900);
+              color: var(--color-gray-600);
               margin-bottom: var(--spacing-lg);
               position: relative;
               display: inline-block;
@@ -574,6 +575,19 @@ body {
           }
         }
       }
+    }
+
+    .main {
+    .about {
+      .about__container {
+          .about__header {
+            /* background-color: #00ff88; */
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+          }
+        }
+      }
+    
     }
   }
 }
